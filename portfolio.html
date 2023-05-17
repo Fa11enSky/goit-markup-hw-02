@@ -4,39 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Studio</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <!-- HEADER -->
-    <header>
-      <nav class="nav">
-        <a class="logo" href="/">WebStudio</a>
+    <header class="page-head">
+      <nav>
+        <a class="logo" href="./index.html"
+          ><span class="logo-part">Web</span>Studio</a
+        >
         <ul>
           <li><a class="nav-link" href="./index.html">Studio</a></li>
-          <li><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="nav-link" href="#">Contacts</a></li>
+          <li>
+            <a class="nav-link " href="./portfolio.html">Portfolio</a>
+          </li>
+          <li><a class="nav-link" href="">Contacts</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a class="header-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="header-address-link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a></li>
-      </ul>
+      <address>
+        <ul>
+          <li>
+            <a class="address-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="address-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
     </header>
     <main>
       <!-- section filter -->
-      <section class="filter">
+      <section class="filter"> 
         <ul>
           <li><button class="filter-button" type="button">All</button></li>
           <li><button class="filter-button" type="button">Web Site</button></li>
           <li><button class="filter-button" type="button">App</button></li>
           <li><button class="filter-button" type="button">Design</button></li>
-          <li><button class="filter-button" type="button">Marketing</button></li>
+          <li>
+            <button class="filter-button" type="button">Marketing</button>
+          </li>
         </ul>
       </section>
       <!-- section main -->
       <section>
-        <h1 class="hiden">Portfolio</h1>
+        <h1 class="visually-hidden">Portfolio</h1>
         <ul>
           <li class="portfolio-variant">
             <img
@@ -131,8 +154,10 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <a class="logo" href="/">WebStudio</a>
+    <footer class="footer">
+      <a class="logo logo-footer" href="./index.html"
+        ><span class="logo-part">Web</span>Studio</a
+      >
       <p class="footer-about">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
