@@ -9,44 +9,48 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--main-dark);
+  color: var(--light-dark);
+  background-color: var(--white);
 }
-.page-head{
-    border: 1px solid var(--for-border);
+.page-head {
+  border: 1px solid var(--for-border);
 }
 /* header-nav */
-ul > li {
-  list-style: none;
-}
+
 .logo {
-  text-decoration: none;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.66;
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--main-dark);
+  color: var(--primary-brand);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
 }
 .logo-part {
-  color: var(--primary-brand);
+  color: var(--main-dark);
 }
 
 .nav-link {
-  text-decoration: none;
   color: var(--main-dark);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--primary-brand);
+  color: var(--active-blue);
 }
-
+.adress{
+font-style: normal;
+}
 .address-link {
-  font-style: normal;
-  text-decoration: none;
   color: var(--light-dark);
   font-size: 16px;
   line-height: 1.5;
@@ -54,22 +58,31 @@ ul > li {
 
 .address-link:hover,
 .address-link:focus {
-  color: var(--primary-brand);
+  color: var(--active-blue);
 }
 /* hero */
 .hero {
   background-color: var(--main-dark);
 }
 .hero-title {
+    text-align: center;
   color: var(--white);
   text-transform: capitalize;
   font-size: 56px;
   line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+.button{
+    cursor: pointer;
 }
 .hero-button {
   font-family: 'Roboto', sans-serif;
   color: var(--white);
   text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1.5;
+  letter-spacing: 0.04em;
   background-color: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -80,34 +93,27 @@ ul > li {
   background-color: var(--active-blue);
 }
 /* section advantages */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
 .advantages-title {
   color: var(--main-dark);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .advantages-post {
-  color: var(--light-dark);
-  font-size: 16;
+  font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 /* section What are we doing */
 .title {
+    color: var(--main-dark);
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 .our-work {
   border: 1px solid var(--for-border);
@@ -123,21 +129,24 @@ ul > li {
   border-radius: 0px 0px 4px 4px;
 }
 .team-title {
+  color: var(--main-dark);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   text-transform: capitalize;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 .team-post {
-  color: var(--light-dark);
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 /* footer */
 .footer {
   background-color: var(--main-dark);
 }
-.logo-footer {
+.footer-logo-part {
   color: var(--white-cloud);
 }
 .footer-about {
@@ -167,13 +176,15 @@ ul > li {
   border: 1px solid var(--for-border);
 }
 .portfolio-title {
+  color: var(--main-dark);
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.5;
   text-transform: capitalize;
+  letter-spacing: 0.02em;
 }
 .portfolio-description {
-  color: var(--light-dark);
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
